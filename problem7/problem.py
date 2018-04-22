@@ -14,7 +14,7 @@ def getNextPrimeNumber (currentPrime):
         currentPrime = currentPrime + 1
     return currentPrime
 
-# Recursion doesn't work in python, maximum recursion depth
+# Recursion in python can cause maximum recursion depth
 import sys
 sys.setrecursionlimit(15000)
 def getPrimeAtPositionRecursive(toPosition, position=0, prime=1):
