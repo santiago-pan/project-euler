@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "jest": "^22.4.3",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "problem4"
+    ]
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
