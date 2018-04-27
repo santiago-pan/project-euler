@@ -7,8 +7,5 @@ def isPythagorean (a, b, M):
 def findPythagorean (MAX):
     for an in range(1,MAX):
         for bn in range(an,MAX):
-            if isPythagorean(an,bn,MAX) is True:
-                print('a:%d,b:%d,c:%d'%(an, bn, MAX-an-bn))
+            if isPythagorean(an,bn,MAX) is True:                
                 return (an * bn * (MAX-an-bn))
-
-    
