@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node bin/dev",
-    "build": "babel problem10 -d lib"
+    "start": "node bin/dev"
   },
   "jest": {
     "verbose": true,
