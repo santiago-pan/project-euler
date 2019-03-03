@@ -2,12 +2,13 @@ import unittest
 import problem as p
 import time
 
+
 class TestProblem(unittest.TestCase):
     def test_is_divisor(self):
-        self.assertTrue(p.isDivisor(2,2))
-        self.assertTrue(p.isDivisor(4,2))
-        self.assertTrue(p.isDivisor(6,2))
-        self.assertFalse(p.isDivisor(5,2))
+        self.assertTrue(p.isDivisor(2, 2))
+        self.assertTrue(p.isDivisor(4, 2))
+        self.assertTrue(p.isDivisor(6, 2))
+        self.assertFalse(p.isDivisor(5, 2))
 
     def test_is_prime(self):
         self.assertTrue(p.isPrime(2))
@@ -23,5 +24,6 @@ class TestProblem(unittest.TestCase):
 
     def test_get_primes_factor(self):
         self.assertEqual(p.getPrimeMaxFactor(600851475143), 6857)
+
 
 unittest.main()

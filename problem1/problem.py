@@ -1,10 +1,12 @@
 import numpy as np
 import unittest
 
-# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+# If we list all the natural numbers below 10 that are multiples of 3 or 5,
+# we get 3, 5, 6 and 9. The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-def isMultiple (num):
+
+def isMultiple(num):
     NUM_A = 3
     NUM_B = 5
 
@@ -13,7 +15,8 @@ def isMultiple (num):
     else:
         return False
 
-def getAllMultiples (num):
+
+def getAllMultiples(num):
     multiplos = []
     for i in range(1, num):
         if isMultiple(i):
@@ -21,15 +24,20 @@ def getAllMultiples (num):
 
     return multiplos
 
-def addNumbers (numbers):
+
+def addNumbers(numbers):
     return sum(numbers)
 
-def problem_1_solution ():
+
+def problem_1_solution():
     print(addNumbers(getAllMultiples(1000)))
+
 
 problem_1_solution()
 
 # TESTS
+
+
 class TestProblem1(unittest.TestCase):
     def test_is_multiple(self):
         self.assertEqual(isMultiple(3), True)
@@ -40,9 +48,10 @@ class TestProblem1(unittest.TestCase):
         self.assertEqual(isMultiple(2), False)
 
     def test_multiplos_below(self):
-        self.assertEqual(getAllMultiples(10), [3,5,6,9])
+        self.assertEqual(getAllMultiples(10), [3, 5, 6, 9])
 
     def test_add_numbers(self):
-        self.assertEqual(addNumbers([3,5,6,9]), 23)
+        self.assertEqual(addNumbers([3, 5, 6, 9]), 23)
+
 
 unittest.main()
