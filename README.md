@@ -6,15 +6,20 @@
 
 Code
 
-> npx babel-node problemXY/problem.js
+> npx babel-node javascript/problemXY/problem.js
 
 Test
-> npx jest problemXY/problem.test.js
+> npx jest javascript/problemXY/problem.test.js
 
 ## Python problems
 
 Code
-> python3 problemXY/proplem.py
+> python3 python/problemXY/proplem.py
 
 Test
-> python3 problemXY/proplem.test.py
+> python3 python/problemXY/proplem.test.py
+
+## Go problems
+
+Code
+> go run go/problemXY/problem.go
