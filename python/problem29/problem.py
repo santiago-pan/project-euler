@@ -47,4 +47,5 @@ def calculateValues(maxa, maxb):
     return len(tableOfNumbers.keys())
 
 
-calculateValues(100, 100)
+solution = calculateValues(100, 100)
+print(solution)
