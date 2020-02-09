@@ -1,7 +1,9 @@
 import math
 
+
 def get_number_of_digits_in_number(number):
     return max(math.floor(math.log10(abs(number))), 0) + 1
+
 
 def solution():
     stop = False
